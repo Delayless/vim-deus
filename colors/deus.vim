@@ -581,7 +581,7 @@ if has("spell")
     call s:HL('SpellCap',   s:green, s:none, s:bold . s:italic)
   endif
   " Not recognized word
-  call s:HL('SpellBad',   s:none, s:none, s:undercurl, s:blue)
+  call s:HL('SpellBad',   s:none, s:none, s:underline, s:blue)
   " Wrong spelling for selected region
   call s:HL('SpellLocal', s:none, s:none, s:undercurl, s:aqua)
   " Rare word
