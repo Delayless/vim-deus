@@ -407,9 +407,9 @@ if version >= 703
   call s:HL('CursorLineNr', s:fg1, s:bg2)
 endif
 
-" Weird black color breaks 
-hi! link NonText deusGreen 
-hi! link Ignore deusPurple 
+" Weird black color breaks
+hi! link NonText deusGreen
+hi! link Ignore deusPurple
 hi! link SpecialKey deusOrange
 
 call s:HL('Visual',    s:none,  s:bg3, s:invert_selection)
@@ -481,7 +481,8 @@ else
   call s:HL('Special', s:bg1, s:orange, s:italic)
 endif
 
-call s:HL('Comment', s:gray, s:none, s:italicize_comments)
+call s:HL('Comment', s:gray, s:none)
+call s:HL('DocComment', s:fg4, s:none, s:italicize_comments)
 call s:HL('Todo', s:vim_fg, s:vim_bg, s:bold . s:italic)
 call s:HL('Error', s:red, s:vim_bg, s:bold . s:inverse)
 "call s:HL("Error", { "fg": s:red, "bg": s:vim_bg }) " any erroneous construct
@@ -905,9 +906,9 @@ hi! link  EnumValueTag deusAqua
 hi! link  UnionTag deusPurple
 hi! link  FieldTag deusPurple
 hi! link  LocalVariableTag deusOrange
-hi! link  FunctionTag deusGreen 
+hi! link  FunctionTag deusGreen
 hi! link  MethodTag deusGreen
-hi! link  FunctionParameterTag deusPurpleBold 
+hi! link  FunctionParameterTag deusPurpleBold
 hi! link  TemplateTypeParameterTag deusPurple
 hi! link  TemplateNonTypeParameterTag deusRedBold
 hi! link  TemplateTemplateParameterTag deusRed
