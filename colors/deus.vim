@@ -782,6 +782,13 @@ hi StatusLine ctermbg=10 ctermfg=10 cterm=bold guibg=NONE guifg=NONE gui=NONE
 hi StatusLineNC ctermbg=10 ctermfg=10 cterm=NONE guibg=NONE guifg=NONE gui=NONE
 
 " }}}
+" Netrw: {{{
+
+hi! link netrwDir deusGreen
+hi! link netrwClassify deusBlue
+hi! link netrwTreeBar deusRed
+hi! link netrwPlain deusFg1
+
 " }}}
 " Language syntax {{{
 " Diff: {{{
@@ -1009,8 +1016,10 @@ hi! link javascriptClassSuper deusOrange
 
 " hi! link javascriptFuncKeyword deusOrange
 " hi! link javascriptAsyncFunc deusOrange
+hi! link javascriptFuncName deusFg1
 hi! link javascriptFuncKeyword deusAqua
-hi! link javascriptAsyncFunc deusAqua
+hi! link javascriptAwaitFuncKeyword deusRed
+hi! link javascriptAsyncFuncKeyword deusBlue
 hi! link javascriptClassStatic deusOrange
 
 hi! link javascriptOperator deusRed
@@ -1030,7 +1039,7 @@ hi! link javascriptObjectLabel deusFg1
 hi! link javascriptPropertyName deusFg1
 
 hi! link javascriptLogicSymbols deusFg1
-hi! link javascriptArrowFunc deusFg1
+hi! link javascriptArrowFunc deusYellow
 
 hi! link javascriptDocParamName deusFg4
 hi! link javascriptDocTags deusFg4
@@ -1038,6 +1047,16 @@ hi! link javascriptDocNotation deusFg4
 hi! link javascriptDocParamType deusFg4
 hi! link javascriptDocNamedParamType deusFg4
 
+" }}}
+" jsx-pretty: {{{
+hi! link jsxTagName deusBlue
+hi! link jsxComponentName jsxTagName
+hi! link jsxOpenPunct deusGray
+hi! link jsxBraces jsxTagName
+hi! link jsxCloseString jsxOpenPunct
+hi! link jsxEqual jsxTagName
+hi! link jsxString javascriptString
+hi! link jsxAttrib jsxString
 " }}}
 " CoffeeScript: {{{
 
